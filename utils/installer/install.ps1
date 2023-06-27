@@ -5,9 +5,10 @@ if ($PSVersionTable.PSVersion -lt 7.1) {
 }
 
 # set script variables
-$LV_BRANCH = $LV_BRANCH ?? "master"
+# $LV_BRANCH = $LV_BRANCH ?? "master"
+$LV_BRANCH = $LV_BRANCH ?? "release-1.3/neovim-0.9"
 $LV_REMOTE = $LV_REMOTE ??  "lunarvim/lunarvim.git"
-$INSTALL_PREFIX = $INSTALL_PREFIX ?? "$HOME\.local"
+$INSTALL_PREFIX = $INSTALL_PREFIX ?? "E:\\NeoVim\\Install\\nvim-win64\\lunarvim"
 
 $env:XDG_DATA_HOME = $env:XDG_DATA_HOME ?? $env:APPDATA
 $env:XDG_CONFIG_HOME = $env:XDG_CONFIG_HOME ?? $env:LOCALAPPDATA
